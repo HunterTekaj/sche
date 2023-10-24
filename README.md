@@ -3,10 +3,10 @@
 notifications in certain hours
 
 ## Requirements (sorta)
-'_notify-send_' working for half of this to work
-i think that's it 
-
+- notify-send
+for half of this to work it's only that i think 
 (not counting obvious ones and all the stuff you may need for notify-send to work)
+
 <br/><br/>
 ## "Help me!"
 > "Do not worry my friend..."
