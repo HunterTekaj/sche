@@ -1,6 +1,10 @@
 # sche
 'sche' is a simple bash text-based application for managing time and popping 
 notifications in certain hours
+
+## Requirements (sorta)
+'_notify-send_' working for half of this to work
+i think that's it (not counting obvious ones and all the stuff you may need for notify-send to work)
 ___
 ## "Help me!"
 > "Do not worry my friend..."
@@ -35,3 +39,7 @@ Display all the hours [time:message]
 $ sche fjaodjaspdjaspjdasidj
 Do nothing, i mean, literally do nothing, it doesn't write this.
 ```
+
+## The Config file
+instructions in it, jUsT rEaD iT
+
