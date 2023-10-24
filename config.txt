@@ -1,6 +1,6 @@
 # How-to write here
-# <hour> [message]
-# the only important thing is writing "<hour>: [message]"
+# "hour: [message]"
+# the only important thing is writing "hour: [message]"
 # the space is not necessary
 #
 # Example:
