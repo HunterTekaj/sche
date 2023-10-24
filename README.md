@@ -33,5 +33,5 @@ Display all the hours [time:message]
 
 ```
 $ sche fjaodjaspdjaspjdasidj
-Do nothing
+Do nothing, i mean, literally do nothing, it doesn't write this.
 ```
