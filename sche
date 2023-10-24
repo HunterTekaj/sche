@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#schefile="$HOME/.config/sche/config.txt"
+# Do not use the below schefile var if it's in a 'path' directory
+schefile="$(dirname $(readlink -f $0))"
+curtime=$(date +"%H")
+
+if [[ -z "$1" || "$1" == "-h" || "$1" == "--help" ]]; then
+    echo "Usage: sche <none> [s|start] [w|write] [a|all]"
+
+elif [[ "$1" == "s" || "$1" == "start" ]]; then
+    # while [ "$curtime" != "12" ]; do
+    while :; do
+        # echo "[sche started]"
+        # if notify-send is above the sleep, it will send a notification as soon as it starts
+        sleep 3600
+        notify-send -t 1800000 "Scheduler" "$(cat "$schefile" | grep "$curtime:" )"
+    done
+
+elif [[ "$1" == "a" || "$1" == "all" ]]; then
+    cat "$schefile" | grep -v "#" | grep .
+
+elif [[ "$1" == "w" || "$1" == "write" ]]; then
+    $EDITOR $schefile
+fi
+
+# else: just exit with no output
+
