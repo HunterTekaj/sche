@@ -1,0 +1,11 @@
+# How-to write here
+# <hour> [message]
+# the only important thing is writing "<hour>: [message]"
+# the space is not necessary
+#
+# Example:
+# 9: hello world
+# 0:goodnight world
+#
+
+13: hello
