@@ -12,17 +12,14 @@ elif [[ "$1" == "s" || "$1" == "start" ]]; then
     while :; do
         # echo "[sche started]"
         # if notify-send is above the sleep, it will send a notification as soon as it starts
-<<<<<<< HEAD
         loadm="$(cat "$schefile" | grep "$curtime:" )"
         
         if [ -z "$loadm" ]; then
             loadm="$(cat "$schefile" | grep "$(date +"%H"):")"
         fi
-=======
         sleep 3600
         notify-send -t 1800000 "Sche" "$(cat "$schefile" | grep "$curtime:" )"
     done
->>>>>>> 53d47df64020102de69e1fe57c4d032aa8daa564
 
         if [ -n "$loadm" ]; then
             notify-send -t 600000 "$title" "$loadm"
