@@ -14,7 +14,7 @@ elif [[ "$1" == "s" || "$1" == "start" ]]; then
         # echo "[sche started]"
         # if notify-send is above the sleep, it will send a notification as soon as it starts
         sleep 3600
-        notify-send -t 1800000 "Scheduler" "$(cat "$schefile" | grep "$curtime:" )"
+        notify-send -t 1800000 "Sche" "$(cat "$schefile" | grep "$curtime:" )"
     done
 
 elif [[ "$1" == "a" || "$1" == "all" ]]; then
