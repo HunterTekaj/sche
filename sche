@@ -21,12 +21,6 @@ elif [[ "$1" == "s" || "$1" == "start" ]]; then
         notify-send -t 1800000 "Sche" "$(cat "$schefile" | grep "$curtime:" )"
     done
 
-        if [ -n "$loadm" ]; then
-            notify-send -t 600000 "$title" "$loadm"
-        fi
-        
-        sleep $stime
-    done
 elif [[ "$1" == "a" || "$1" == "all" ]]; then
     cat "$schefile" | grep -v "#" | grep .
 
