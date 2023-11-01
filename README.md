@@ -1,47 +1,33 @@
 # sche
-'sche' is a simple bash text-based application for managing time and popping 
-notifications in certain hours
+sche is a script program for poping notifications at a certain time using **notify-send**
 
-## Requirements (sorta)
-- notify-send
+## Basic Usage
+`Usage: sche <none> [s|start] [w|write] [a|all]`
 
-for half of this to work it's only that i think 
-(not counting obvious ones and all the stuff you may need for notify-send to work)
+## Detailed Usage
+
+**s | start**<br/>Start looping the program looking for a time mark<br/><br/>
+**a | all**<br/>List all time marks<br/><br/>
+**w | write**<br/>Opens in $EDITOR the config file<br/><br/>
+
+**\<none\>**<br/>Same as [-h | --help]<br/><br/>
+**-h | --help**<br/>Displays basic usage info<br/><br/>
+
+## Config file
+**Writing**:
+
+`<hour>:<minutes>; [message]`<br/>
+
+**Examples:**
+
+
+```
+~ config.txt
+
+// Both will work
+08:30; hello world
+23:59;goodnight world
+```
+
 <br/><br/>
-## "Help me!"
-> "Do not worry my friend..."
-
-```Usage: sche <none> [s|start] [w|write] [a|all]```
 <br/><br/>
-## "Babe you are making no sense!"
-> "Calm down, i will explain what you do not understand..."
-
-```
-$ sche <none>/[-h|--help]
-Display usage info
-```
-
-```
-$ sche [s|start]
-Starts the loop of notification, every 30m checks for new hour (why? yeah no sense, i will update this, it is temporary)
-then it updates the notification with the message for the new hour notification if any, if not it will do nothing (wrongly do nothing because of an error, i will fix this too)
-```
-
-```
-$ sche [w|write]
-Opens with the editor you choose in the ***sche*** script the "config" file
-```
-
-```
-$ sche [a|all]
-Display all the hours [time:message] 
-```
-
-```
-$ sche fjaodjaspdjaspjdasidj
-Do nothing, i mean, literally do nothing, it doesn't write this.
-```
-<br/><br/>
-## The Config file
-instructions in it, jUsT rEaD iT
-
