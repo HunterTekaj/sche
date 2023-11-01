@@ -3,7 +3,7 @@
 title="(sche)"
 schefile="$HOME/.config/sche/config.txt"
 curtime=$(date +"%H.%M") # hour.minutes
-stime=$((300)) # sleep_time; default: 5 minutes
+stime=$((60)) # sleep_time; default: 1 minutes
 acttime=$((1800*1000)) # 30 minutes * 1 mil second in seconds
 
 if [[ -z "$1" || "$1" == "-h" || "$1" == "--help" ]]; then
