@@ -29,7 +29,7 @@ elif [[ "$1" == "w" || "$1" == "write" ]]; then
     if [ -z "$EDITOR" ]; then
         echo "sche: error: no EDITOR variable set!"
     else
-        $EDITOR $schefile
+        exec $EDITOR $schefile
     fi
 fi
 
