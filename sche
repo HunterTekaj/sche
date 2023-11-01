@@ -3,7 +3,7 @@
 title="(sche)"
 schefile="$HOME/.config/sche/config.txt"
 curtime=$(date +"%H.%M") # hour.minutes
-stime=$((60)) # sleep_time; default: 1 minute
+stime=$((300)) # sleep_time; default: 5 minutes
 
 if [[ -z "$1" || "$1" == "-h" || "$1" == "--help" ]]; then
     echo "Usage: sche <none> [s|start] [w|write] [a|all]"
@@ -17,7 +17,7 @@ elif [[ "$1" == "s" || "$1" == "start" ]]; then
         if [ -z "$loadm" ]; then
             loadm="$(cat "$schefile" | grep "$(date +"%H"):")"
         fi
-        sleep 3600
+        sleep $stime
         notify-send -t 1800000 "Sche" "$(cat "$schefile" | grep "$curtime:" )"
     done
 
