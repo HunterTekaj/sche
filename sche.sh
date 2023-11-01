@@ -16,7 +16,7 @@ elif [[ "$1" == "s" || "$1" == "start" ]]; then
         loadm=$(cat "$schefile" | grep "$curtime:" )
         
         if [ -z "$loadm" ]; then
-            loadm=$(cat "$schefile" | grep "$(date +%H):")
+            loadm=$(cat "$schefile" | grep "$(date +%R);")
         fi
         sleep $stime
         notify-send -t $acttime "Sche" $(cat "$schefile" | grep "$curtime:" )
