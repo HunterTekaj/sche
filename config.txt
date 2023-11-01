@@ -1,10 +1,8 @@
 # How-to write here
-# <hour>(.<minutes>) [message]
-# the only important thing is writing "<hour>: [message]"
-# the space is not necessary
+# <hour>:<minutes>; [message]
+# the space between ';' and '[message]' is not necessary
 #
 # Examples:
-# 8.30: hello world
-# 0:goodnight world
-# 
-12:hello world
+# 8:30; hello world
+# 23:59;goodnight world
+#
