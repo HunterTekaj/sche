@@ -8,7 +8,7 @@ sche is a script program for poping notifications at a certain time using **noti
 
 **s | start**<br/>Start looping the program looking for a time mark<br/><br/>
 **a | all**<br/>List all time marks<br/><br/>
-**w | write**<br/>Opens in $EDITOR the config file<br/><br/>
+**w | write**<br/>Opens in `$EDITOR` the config file<br/><br/>
 
 **\<none\>**<br/>Same as [-h | --help]<br/><br/>
 **-h | --help**<br/>Displays basic usage info<br/><br/>
